@@ -13,6 +13,12 @@
 		49DB8B8620ACB4DA00205451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DB8B8420ACB4DA00205451 /* Main.storyboard */; };
 		49DB8B8820ACB4DA00205451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DB8B8720ACB4DA00205451 /* Assets.xcassets */; };
 		49DB8B8B20ACB4DA00205451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DB8B8920ACB4DA00205451 /* LaunchScreen.storyboard */; };
+		49F6B78520B34A4C002D06AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49F6B78420B34A4C002D06AD /* GoogleService-Info.plist */; };
+		49F6B78720B4983F002D06AD /* CodableSchoolsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6B78620B4983F002D06AD /* CodableSchoolsService.swift */; };
+		49F6B78920B49DC5002D06AD /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6B78820B49DC5002D06AD /* Schools.swift */; };
+		49F6B78B20B4CA6E002D06AD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6B78A20B4CA6E002D06AD /* School.swift */; };
+		49F6B78D20B55D27002D06AD /* SchoolObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6B78C20B55D27002D06AD /* SchoolObject.swift */; };
+		49F6B79120B57F87002D06AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6B79020B57F87002D06AD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		49DB8B8720ACB4DA00205451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DB8B8A20ACB4DA00205451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49DB8B8C20ACB4DA00205451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F6B78420B34A4C002D06AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49F6B78620B4983F002D06AD /* CodableSchoolsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSchoolsService.swift; sourceTree = "<group>"; };
+		49F6B78820B49DC5002D06AD /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
+		49F6B78A20B4CA6E002D06AD /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		49F6B78C20B55D27002D06AD /* SchoolObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolObject.swift; sourceTree = "<group>"; };
+		49F6B79020B57F87002D06AD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5CC00AD86D5B0DECF5E14A42 /* Pods_FireBaseStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2990CBBD30E848E88A5702 /* Pods-FireBaseStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseStore/Pods-FireBaseStore.debug.xcconfig"; sourceTree = "<group>"; };
 		C535E760A967582E5DC6A47F /* Pods-FireBaseStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseStore/Pods-FireBaseStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,8 +73,14 @@
 		49DB8B7F20ACB4DA00205451 /* FireBaseStore */ = {
 			isa = PBXGroup;
 			children = (
+				49F6B78420B34A4C002D06AD /* GoogleService-Info.plist */,
 				49DB8B8020ACB4DA00205451 /* AppDelegate.swift */,
 				49DB8B8220ACB4DA00205451 /* ViewController.swift */,
+				49F6B79020B57F87002D06AD /* DetailViewController.swift */,
+				49F6B78C20B55D27002D06AD /* SchoolObject.swift */,
+				49F6B78620B4983F002D06AD /* CodableSchoolsService.swift */,
+				49F6B78820B49DC5002D06AD /* Schools.swift */,
+				49F6B78A20B4CA6E002D06AD /* School.swift */,
 				49DB8B8420ACB4DA00205451 /* Main.storyboard */,
 				49DB8B8720ACB4DA00205451 /* Assets.xcassets */,
 				49DB8B8920ACB4DA00205451 /* LaunchScreen.storyboard */,
@@ -123,6 +141,11 @@
 					49DB8B7C20ACB4DA00205451 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49DB8B8B20ACB4DA00205451 /* LaunchScreen.storyboard in Resources */,
+				49F6B78520B34A4C002D06AD /* GoogleService-Info.plist in Resources */,
 				49DB8B8820ACB4DA00205451 /* Assets.xcassets in Resources */,
 				49DB8B8620ACB4DA00205451 /* Main.storyboard in Resources */,
 			);
@@ -184,6 +208,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FireBaseStore/Pods-FireBaseStore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GeoFire/GeoFire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -191,6 +216,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoFire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -209,6 +235,11 @@
 			files = (
 				49DB8B8320ACB4DA00205451 /* ViewController.swift in Sources */,
 				49DB8B8120ACB4DA00205451 /* AppDelegate.swift in Sources */,
+				49F6B78D20B55D27002D06AD /* SchoolObject.swift in Sources */,
+				49F6B78720B4983F002D06AD /* CodableSchoolsService.swift in Sources */,
+				49F6B78B20B4CA6E002D06AD /* School.swift in Sources */,
+				49F6B78920B49DC5002D06AD /* Schools.swift in Sources */,
+				49F6B79120B57F87002D06AD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
